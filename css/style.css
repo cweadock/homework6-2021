@@ -1,3 +1,66 @@
 body{
-    
+    font-family: 'Alegreya Sans SC', serif;
+    background-image: url('../images/concrete_seamless.png');
+    background-color: #f1f1f1;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+a:visited{
+    color:blue;
+  }
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card header{
+    background: #288088;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px;
+    border-radius: 7px 7px 0px 0px;
+    justify-content: center;
+}
+
+.pricing{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    flex-basis: 450px;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.gallery img{
+    border: 10px solid #50c7c7;
+    margin: 10px;
+    width: 300px;
+}
+
+@media screen and (min-width: 800px){
+    header, .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    } */
 }
