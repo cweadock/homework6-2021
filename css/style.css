@@ -28,14 +28,16 @@ a:visited{
 
 .pricing{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .card{
+    /* flex-flow: column wrap; */
     flex-basis: 450px;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
 }
 
 .gallery{
@@ -63,4 +65,16 @@ a:visited{
         flex-direction: row;
         justify-content: flex-end;
     } */
+    .top{
+        position: sticky;
+        top: 0;
+    }
+    
+    .pricing{
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .card{
+        flex-basis: 250px;
+    }
 }
