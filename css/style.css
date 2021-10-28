@@ -52,6 +52,22 @@ a:visited{
     margin: 10px;
     width: 300px;
 }
+@keyframes logogrow{
+    from{
+        width: 50px;
+        opacity: 0;
+    }
+    to{
+        width: 425px;
+        opacity: 1;
+    }
+}
+
+#logo{
+    animation-name: logogrow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
 
 @media screen and (min-width: 800px){
     header, .nav_links{
