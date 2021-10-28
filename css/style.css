@@ -98,4 +98,43 @@ a:visited{
         justify-content: left;
         /* helllooo */
     }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+      animation: none;
+    }
+}
+
+@media print {
+    body {
+        background-image: none;
+        /* display: block; */
+      }
+
+    nav{
+        width: 100%;
+    }
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        border: 2px solid #45ADDD;
+        flex-basis: 250px;
+    }
+  
+    .pricing{
+        display: flex;
+        flex-direction: row;
+    }
+  
+  
+    .gallery, #gallery {
+      display: none;
+    }
 }
