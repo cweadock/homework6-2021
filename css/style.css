@@ -129,8 +129,8 @@ a:visited{
     }
   
     .pricing{
-        display: flex nowrap;
-        flex-direction: row;
+        display: flex;
+        flex-flow: row nowrap;
         align-items: flex-end;
         justify-content: center;
     }
